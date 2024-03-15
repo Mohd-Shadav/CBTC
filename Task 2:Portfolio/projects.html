@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+           
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+    /* width: 100%;
+    height: 100%; */
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+
+            
+    
+        
+        }
+        .main{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: 100vh;
+
+         
+            /* background: linear-gradient(skyblue,white); */
+        }
+        .nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            background-color:rgb(0,0,33);
+            /* color:#252525; */
+            height: 100vh;
+            width: 20vmax;
+            /* border-bottom: 1px solid #dadada; */
+            border: 1px solid black;
+          
+        }
+        .logo img{
+            width: 10vmax;
+            height: 10vmax;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            margin-top: 10vw;
+            background-color: black;
+            border: 1px solid rgb(255, 79, 255) ;
+            box-shadow: -3px -3px 50px rgb(255, 79, 255);
+        }
+        .myName{
+            color: rgb(255, 79, 255);
+            margin: 1vw;
+            font-size: 1.5vmax;
+            font-weight: 800;
+            /* text-decoration: underline black; */
+            text-shadow: 1px 1px 2px #dadada;
+
+        }
+        .socialmedia{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 2.2vmax;
+            gap: 1.2vmax;
+            margin-bottom: 5vw;
+    
+        }
+        .socialmedia i{
+            color: #dadada;
+        }
+        .nav2{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            flex-direction: column;
+            color: #dadada;
+            gap: 2vw;
+            font-size: 1.3vmax;
+            margin-bottom: 13vw;
+        
+       
+       
+        } 
+        .nav2 h3{
+            border-bottom: 0.5px solid #dadada;
+            width: 17vw;
+            text-align: center;
+        }
+        .nav2 a{
+            color: #dadada;
+            text-decoration: none;
+            /* align-self:; */
+
+        }
+      .PROJECTMAIN{
+        width: 80vw; /* Adjust the width as needed */
+    overflow-x: auto;
+    white-space: nowrap;
+    background-image: url("./photo-1533628635777-112b2239b1c7.avif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+      }
+    .heading{
+        height: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        font-size: 2vw;
+        background-color:rgb(0,0,33);
+        color: #dadada;
+
+        /* text-align: center; */
+
+
+    }
+    .hcjcombo{
+        display: flex;
+        justify-content:center;
+        align-items:flex-start;
+        /* background-color: #008B8B; */
+        position: relative;
+        width: 60vw;
+      
+    
+    }
+    .hcjprojectName{
+        align-self: flex-start;
+        display: flex;
+        justify-content:space-around;
+        align-items: flex-start;
+        width: 20vw;
+        padding: 2vw;
+        margin-top: 0.5vw;
+        /* background-color: #008B8B; */
+    }
+    .hcjprojectName h2{
+         text-decoration: underline;
+    }
+    .hcjprojectlist{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:self-start;
+    
+        gap: 2vw;
+        /* background-color: #008B8B; */
+        padding: 2.3vw;
+        flex-wrap: wrap;
+       
+        /* padding-left: 2vw; */
+
+    }
+  
+ 
+    .pycombo{
+        display: flex;
+
+
+    }
+
+    .PythonProjectName{
+        align-self: flex-start;
+        display: flex;
+        justify-content:space-around;
+        align-items: flex-start;
+        width: 20vw;
+        padding: 2vw;
+        /* margin-left: 2vw; */
+        /* background-color: antiquewhite; */
+
+    }
+    .PythonProjectName h2{
+        margin-right: 6vw;
+        text-decoration: underline;
+
+    }
+    .PythonProjectlist{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:self-start; 
+        gap: 2vw;
+        padding: 2.3vw;
+        flex-wrap: wrap;
+        padding-left: 2.5vw;
+        margin-left: 0.9vw;
+    }
+    .javacombo{
+        display: flex;
+    }
+    .JavaProjectName{
+        align-self: flex-start;
+        display: flex;
+        justify-content:space-around;
+        align-items: flex-start;
+        width: 20vw;
+        padding: 2vw;
+        /* margin-left: 2vw; */
+        /* background-color: antiquewhite; */
+
+    }
+    .JavaProjectName h2{
+        margin-right: 8vw;
+        text-decoration: underline;
+
+    }
+    .JavaProjectlist{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+         
+        gap: 2vw;
+        /* background-color: #008B8B; */
+        padding: 2.3vw;
+        flex-wrap: wrap;
+        padding-left: 2.5vw;
+        margin-left: 0.9vw;
+    
+    }
+    .cppcombo{
+        display: flex;
+
+    }
+    .CPPprojectName{
+        align-self: flex-start;
+        display: flex;
+        justify-content:space-around;
+        align-items: flex-start;
+        width: 20vw;
+        padding: 2vw;
+        /* margin-left: 2vw; */
+        /* background-color: antiquewhite; */
+
+    }
+    .CPPprojectName h2{
+        margin-right: 8vw;
+        text-decoration: underline;
+    }
+
+    .CPPprojectlist{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:self-start; 
+        gap: 2vw;
+        padding: 2.3vw;
+        flex-wrap: wrap;
+        margin-left: 1vw;
+    }
+    .hcjprojectName i,.PythonProjectName i,.JavaProjectName i,.CPPprojectName i{
+        margin-top: 0.5vw;
+        align-self: flex-start;
+    
+    }
+
+    .hcjprojectlist i,.PythonProjectlist i,.JavaProjectlist i,.CPPprojectlist i{
+        margin-right: 2vw;
+        
+  
+    }
+    h2,h4,h3{
+        font-size: 1.2vw;
+    }
+    h4{
+        font-weight: 400;
+    }
+
+        @media (max-width:650px){
+            .body{
+                font-size: 15vw;
+            }
+         .nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 130vh;
+                  gap: 4vh;
+                  border: 1px solid black;
+                  /* background-color: #008B8B; */
+                  
+         }
+         .logo img{
+            align-self:flex-start;
+
+         }
+         .PROJECTMAIN{
+            height: 130vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+         }
+
+            
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo"><img src="./logoimage.png" alt=""></div>
+            <h3 class="myName">MOHD. SHADAV</h3>
+            <div class="socialmedia">
+                <a href="https://www.linkedin.com/in/mohd-shadav-aa53aa28b/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/shadav_sheikh"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/shadav_sheikh/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Mohd-Shadav"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100007713456302"><i class="fa-brands fa-facebook"></i></a>
+
+            </div>
+            <div class="nav2">
+                <h3><a href="./index.html">Home</a></h3>
+                <h3><a href="./about.html">About</a></h3>
+                <h3 class="resume"><a href="./MY CV pdf.pdf" target="_blank">Resume</a></h3>
+                <h3><a href="./projects.html">Projects</a></h3>
+                <H3><a href="./services.html">Services</a></H3>
+                <!-- <h3><a href="./contact.html">Contact Me</a></h3> -->
+            </div>
+        </div>
+
+       
+    <div class="PROJECTMAIN">
+        <div class="heading"><h1>PROJECTS</h1></div>
+        <hr>
+        <div class="hcjcombo">
+        <div class="hcjprojectName"><i class="fa-solid fa-chevron-right"></i><h2>HTML,CSS & JS : </h2></div>
+        <div class="hcjprojectlist">
+            <!-- <h4><i class="fa-solid fa-circle"></i></h4> -->
+            <h4><i class="fa-solid fa-circle"></i>Food Resturant Website UI (Responsive)</h4>
+            <h4><i class="fa-solid fa-circle"></i>Rock,Paper,Scissor Game</h4>
+            <h4><i class="fa-solid fa-circle"></i>Snake Mania Game using Grid</h4>
+            <h4><i class="fa-solid fa-circle"></i>Tic Tac Toe Game</h4>
+            <h4><i class="fa-solid fa-circle"></i>BMI Calculator</h4>
+            <h4><i class="fa-solid fa-circle"></i>Weather Forecasting App with Real Time Weather</h4>
+            <h4><i class="fa-solid fa-circle"></i>Bubble Game (Hit & Miss)</h4>
+            <h4><i class="fa-solid fa-circle"></i>PortFolio Responsive Website using Grid</h4>
+            <h4><i class="fa-solid fa-circle"></i>Insta Story checker</h4>
+            <h4><i class="fa-solid fa-circle"></i>Insta Like Button</h4>
+            <h4><i class="fa-solid fa-circle"></i>Currency Convertor With API</h4>
+            <h4><i class="fa-solid fa-circle"></i>CountDown Timer</h4>
+            <h4><i class="fa-solid fa-circle"></i>Quiz App</h4>
+            <h4><i class="fa-solid fa-circle"></i>Random Color Generator</h4>
+            <h4><i class="fa-solid fa-circle"></i>Amazon Clone</h4>
+            <h4><i class="fa-solid fa-circle"></i>Customize cursor</h4>
+        
+        </div>
+    </div>
+    <div class="pycombo">
+
+  
+    <div class="PythonProjectName"><i class="fa-solid fa-chevron-right"></i><h2>Python :</h2></div>
+    <div class="PythonProjectlist">
+        <h4><i class="fa-solid fa-circle"></i>Calculator Using GUI</h4>
+        <h4><i class="fa-solid fa-circle"></i>Rock,Paper,Scissor Game</h4>
+        <h4><i class="fa-solid fa-circle"></i>Robot's Motion Game</h4>
+        <h4><i class="fa-solid fa-circle"></i>solved 20 Challenging Questions</h4>
+
+    </div>
+</div>
+<div class="javacombo">
+<div class="JavaProjectName"><i class="fa-solid fa-chevron-right"></i><h2>JAVA :</h2></div>
+<div class="JavaProjectlist">
+    <h4><i class="fa-solid fa-circle"></i>ATM system</h4>
+    
+</div>
+</div>
+
+<div class="cppcombo">
+<div class="CPPprojectName"><i class="fa-solid fa-chevron-right"></i><h2>CPP :</h2></div>
+<div class="CPPprojectlist">
+    <h4><i class="fa-solid fa-circle"></i>College Subject Checker</h4>
+    
+  
+</div>
+
+
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>

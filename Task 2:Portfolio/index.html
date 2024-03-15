@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;  
+                }
+        .main{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: 100vh
+        }
+        .nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            background-color:rgb(0,0,33);
+            height: 100vh;
+            width: 20vmax;
+            border: 1px solid black;
+        }
+        .logo img{
+            width: 10vmax;
+            height: 10vmax;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            margin-top: 10vw;
+            background-color: black;
+            border: 1px solid rgb(255, 79, 255) ;
+            box-shadow: -3px -3px 50px rgb(255, 79, 255);
+        }
+        .myName{
+            color: rgb(255, 79, 255);
+            margin: 1vw;
+            font-size: 1.5vmax;
+            font-weight: 800;
+            text-shadow: 1px 1px 2px black;
+
+        }
+        .socialmedia{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 2.2vmax;
+            gap: 1.2vmax;
+            margin-bottom: 5vw;
+    
+        }
+        .socialmedia i{
+            color: #dadada;
+        }
+        .nav2{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            flex-direction: column;
+            color: #dadada;
+            gap: 2vw;
+            font-size: 1.2vmax;
+            margin-bottom: 13vw;
+       
+        } 
+        .nav2 h3{
+            border-bottom: 0.5px solid #dadada;
+            width: 17vw;
+            text-align: center;
+        }
+        .nav2 a{
+            color: #dadada;
+            text-decoration: none;
+            /* align-self:; */
+
+        }
+        .wholeContent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-image: url("./photo-1533628635777-112b2239b1c7.avif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+
+        }   
+        .firstsection{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-wrap: wrap;
+            font-family:cursive;
+        }
+        .leftsection{
+            width: 40vw;
+            height: 70vh;
+            font-size: 3vw;
+            margin: 5vmax 2vmax 0 3vmax;
+            text-align: center;
+            color:#252525;
+    
+        }
+        .first{
+            /* position: absolute;
+            top:250px;
+            left: 400px; */
+            color: #dadada;
+            font-size: 2vw;
+            /* background-color: #dadada; */
+            width: 50vw;
+            height: 30vw;
+        }
+        #element{
+        color: rgb(255, 79, 255);
+        }
+
+        @media (max-width:730px){
+         .nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+                  gap: 4vh;
+                  border: 1px solid black;
+                  /* background-color: #008B8B; */
+                  
+         }
+         .logo img{
+            align-self:flex-start;
+
+         }
+         /* .myName{
+                
+         }
+         .socialmedia{
+           
+         }
+         .nav2{
+
+         } */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="logo"><img src="./logoimage.png" alt=""></div>
+            <h3 class="myName">MOHD. SHADAV</h3>
+            <div class="socialmedia">
+                <a href="https://www.linkedin.com/in/mohd-shadav-aa53aa28b/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/shadav_sheikh"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/shadav_sheikh/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Mohd-Shadav"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100007713456302"><i class="fa-brands fa-facebook"></i></a>
+
+            </div>
+            <div class="nav2">
+                <h3><a href="#">Home</a></h3>
+                <h3><a href="./about.html">About</a></h3>
+                <h3 class="resume"><a href="./MY CV pdf.pdf" target="_blank">Resume</a></h3>
+                <h3><a href="./projects.html">Projects</a></h3>
+                <H3><a href="./services.html">Services</a></H3>
+                <!-- <h3><a href="./contact.html">Contact Me</a></h3> -->
+            </div>
+        </div>
+
+        <div class="wholeContent">
+            <section class="firstsection">
+                <div class="leftsection">
+                    Hi,My name is <span class="name">Shadav</span>
+                    <div class="seconddivsection">and I am a passionate</div>
+                   <span id="element"></span>
+
+                <!-- <img src="./photo-1629904853893-c2c8981a1dc5.avif" alt=""> -->
+                <!-- <h3>Hello,I M A DEVELOPER!</h3> -->
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let resume = document.querySelector(".resume");
+        // resume.addEventListener("click",function(e)
+        // {
+        //     resume.innerHTML = '<a href="./MY CV pdf.pdf" target="_blank"></a>';
+        // })
+    
+    var typed = new Typed('#element', {
+      strings: ['<i>Web Developer.</i>','<i>Engineering Student.</i>'],
+      typeSpeed: 50,
+    });
+    </script>
+</body>
+</html>
